@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Industries | LEVENBERT</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!-- AOS CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="assets/css/styles.css" rel="stylesheet">
+    <style>
+
+.overlay-dots {
+      position: relative;
+      background-color: white;
+    }
+
+    .overlay-dots::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: radial-gradient(circle , rgba(0, 0, 0, 0.1) 1px, transparent 3px);
+      background-size: 35px 50px;
+      pointer-events: none; /* Ensures the dots don't affect interactivity */
+    }
+
+    .content-wrapper {
+      position: relative;
+      z-index: 1; /* Ensures the content stays above the overlay */
+      padding: 40px 20px;
+    }
+
+
+.Industries h3 {
+
+color: #638181;
+}
+
+.Industries span {
+
+font-weight: bold;
+}
+
+.Industries P {
+
+padding-left: 30px;  
+}
+
+
+.sector {
+
+margin-top: 100px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .img-fluid {
+
+      margin-bottom: 50px;
+    }
+    .sector {
+
+margin-top: 15px;
+}
+}
+
+/* Title Section */
+.page-title-section {
+    position: relative;
+    height: 40vh;
+    background: url('assets/img/pagetitle/industries.jpg') center/cover no-repeat;
+}
+
+.page-title-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay for readability */
+    color: #fff;
+    text-align: center;
+}
+
+.page-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .page-title {
+        font-size: 2rem;
+    }
+}
+
+.bg-image {
+            background-image: url('./assets/img/claim02.png'); /* Replace with your image URL */
+            background-color: #FF9F7C;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            height: 100vh; /* Adjust height as needed */
+            width:99vw;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color:#ff9f7c00; /* Dark overlay */
+            z-index: 1;
+        }
+        .content {
+            position: relative;
+            z-index: 2; /* Ensure content is above the overlay */
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .last-colmm{
+          padding-top: 250px;
+          color:#fff ;
+        }
+
+        .last-cont {
+          padding-left: 50px;
+          font-size: 2.5rem;
+          font-weight:900;
+          border-left: 3px #638181 solid;
+        }
+        .last-cont span{
+          font-size: 3rem;
+        }
+       
+
+       /* Responsive Adjustments */
+@media (max-width: 768px) {
+    .bg-image{
+      background-position: left;
+      height: 50vh;
+    }
+    .last-colmm{
+
+      padding-top: 50px;
+    }
+    .last-cont{
+      padding-left: 10px;
+font-size: 1rem;
+    }
+     .last-cont span {
+          font-size: 1.5rem;
+        }
+}
+
+@media (max-width: 1024px) {
+    .bg-image{
+      background-position: left;
+      height: 50vh;
+    }
+}
+
+    </style>
+</head>
+<body>
+  <header class="header fixed-top">
+<div class="topbar d-flex align-items-center ">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+      <div class="contact-info d-flex align-items-center">
+        <!-- <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">Info@vious.com</a></i>
+        <i class="bi bi-phone d-flex align-items-center ms-4"><span>+966 509 711 777</span></i> -->
+      </div>
+      <div class="social-links d-none d-md-flex align-items-center">
+        <a href="https://twitter.com/levenbert?lang=ar" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="https://www.facebook.com/Levenbert/" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/levenbert_consulting/" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/company/levenbert/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+  </div>
+  
+  <!-- End Top Bar -->
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg  ">
+ 
+
+        <div class="container">
+            <a class="navbar-brand" href="./index">
+                <img src="assets/img/logo.png" alt="Levenbert Logo" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                   <li class="nav-item"><a class="nav-link" href="./index">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./overview">Overview</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./businesses">Businesses</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./industries">Industries</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./investors">Investors</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./insight">Insights</a></li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <img src="assets/img/Languages.png" alt="Language Icon" style="width: 24px; height: 24px;">
+                      </a>
+                      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="languageDropdown">
+                          <a class="dropdown-item" href="#">English</a>
+                          <a class="dropdown-item" href="#">Arabic</a>
+                      </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+</header>
+
+    <!-- Main Content Start -->
+    <main class="overlay-dots">
+        <section class="page-title-section">
+            <div class="page-title-overlay d-flex align-items-center justify-content-center">
+                <h1 class="page-title">Industries</h1>
+            </div>
+        </section>
+
+
+        <Section class="Industries">
+            <div class="container">
+             <!-- Sector 1 (Image on Right) -->
+             <div class="col-lg-12 mb-4 sector sector-right">
+              <div class="row align-items-center content-wrapper" style="background-color: #fff;" >
+                <div class="col-md-6 order-md-2">
+                  <img src="assets/img/1.png" alt="Sector Image 1" class="img-fluid rounded">
+                </div>
+                <div class="col-md-6 order-md-1">
+                  <h3><span class="icon bi-circle-fill" style="color: #FF9F7C;  font-size: 1rem;"></span><span> Government and Public Sector</span> </h3>
+                  <p ><span class="pint">Digital Government Solutions:</span>  Implementing e-government platforms and services.
+                    <br>
+                    <span class="pint">Public Policy Consulting: </span> Advising on policy development and implementation.
+                    <br>
+                   <span class="pint">Public Sector Transformation: </span> Modernizing government operations and services.
+                   <br>
+                    <span class="pint">Crisis Management and Resilience Planning:</span> Helping government entities prepare for and respond to crises effectively.
+                    <br>
+                    <span class="pint">Public Finance Management:</span> Optimizing financial management practices within the public sector.
+                    <br>
+                   <span class="pint">Public-Private Partnership Consulting:</span> Facilitating collaboration between government and private sector entities.
+                   <br>
+                    <span class="pint">Regulatory Compliance & Governance: </span>Ensuring adherence to legal frameworks and governance standards.
+                  </p>
+                </div>
+              </div>
+            </div>
+          
+            <!-- Sector 2 (Image on Left) -->
+            <div class="col-lg-12 mb-4 sector sector-left">
+              <div class="row align-items-center content-wrapper" style="background-color: #fff;" >
+                <div class="col-md-6">
+                  <img src="assets\img\2.png" alt="Sector Image 2" class="img-fluid rounded">
+                </div>
+                <div class="col-md-6">
+                  <h3><span class="icon bi-circle-fill" style="color: #FF9F7C;  font-size: 1rem;"></span><span> Healthcare</span></h3>
+                  <p><span class="pint">Healthcare Strategy Consulting:</span> Developing long-term strategies for hospitals and healthcare organizations.
+                    <br>
+                   <span class="pint">Digital Health Transformation:</span> Implementing telemedicine, health informatics, and electronic health records.
+                   <br>
+                   <span class="pint">Regulatory Compliance Consulting:</span> Ensuring adherence to healthcare regulations and standards.
+                   <br>
+                   <span class="pint">Operational Efficiency Optimization:</span> Streamlining healthcare processes to reduce costs and improve patient care.
+                   <br>
+                   <span class="pint">Patient Experience Enhancement: </span> Designing patient-centric care models and improving service delivery.
+                   <br>
+                   <span class="pint">Healthcare Data Analytics:</span> Leveraging big data to improve treatment outcomes and operational efficiency.
+                  </p>
+                </div>
+              </div>
+            </div>
+          
+            <!-- Sector 3 (Image on Right) -->
+            <div class="col-lg-12 mb-4 sector sector-right">
+              <div class="row align-items-center content-wrapper" style="background-color: #fff;" >
+                <div class="col-md-6 order-md-2">
+                  <img src="assets\img\3.png" alt="Sector Image 3" class="img-fluid rounded">
+                </div>
+                <div class="col-md-6 order-md-1">
+                  <h3><span class="icon bi-circle-fill" style="color: #FF9F7C;   font-size: 1rem;"></span><span> Financial Services</span> </h3>
+                  <p><span class="pint">Risk Management Consulting:</span> Assessing and mitigating financial risks, including market, credit, and operational risks.
+                    <br>
+                   <span class="pint">Digital Banking Transformation:</span> Transitioning traditional banks to digital-first institutions.
+                   <br>
+                   <span class="pint">Regulatory Compliance & Reporting:</span> Assisting with adherence to financial regulations and standards.
+                   <br>
+                   <span class="pint">Customer Experience Optimization:</span>  Enhancing client interactions and service offerings.
+                   <br>
+                   <span class="pint">Wealth Management Solutions: </span>Developing strategies for wealth growth and management for clients.
+                   <br>
+                   <span class="pint">Operational Efficiency:</span> Improving back-office operations and reducing costs.
+                   <br>
+                   <span class="pint">Blockchain Integration:</span>  Implementing blockchain technology for secure and transparent transactions.
+      
+                  </p>
+                </div>
+              </div>
+            </div>
+          
+            <!-- Sector 4 (Image on Left) -->
+            <div class="col-lg-12 mb-4 sector sector-left">
+              <div class="row align-items-center content-wrapper" style="background-color: #fff;" >
+                <div class="col-md-6">
+                  <img src="assets\img\4.png" alt="Sector Image 4" class="img-fluid rounded">
+                </div>
+                <div class="col-md-6">
+                  <h3><span class="icon bi-circle-fill" style="color: #FF9F7C;  font-size: 1rem;"></span><span> Manufacturing</span></h3>
+                  <p><span class="pint">Supply Chain Optimization:</span> Streamlining supply chains for efficiency and cost reduction.
+                    <br>
+                   <span class="pint">Lean Manufacturing:</span> Implementing lean principles to eliminate waste and increase productivity.
+                   <br>
+                   <span class="pint">Product Lifecycle Management:</span>  Managing products from conception through to disposal.
+                   <br>
+                   <span class="pint">Quality Management Consulting:</span>  Ensuring products meet quality standards through robust systems.
+                   <br>
+                   <span class="pint">Operational Excellence Consulting:</span> Streamlining production processes to enhance efficiency.
+                   <br>
+                   <span class="pint">Industry 4.0 Integration Consulting:</span>  Implementing IoT, automation, and advanced manufacturing technologies.
+                   <br>
+                   <span class="pint">Sustainability Consulting:</span>  Advising on eco-friendly manufacturing practices.
+      
+                  </p>
+                </div>
+              </div>
+            </div>
+          
+           
+            <div class="col-lg-12 mb-4 sector sector-right">
+              <div class="row align-items-center content-wrapper" style="background-color: #fff;" >
+                <div class="col-md-6 order-md-2">
+                  <img src="assets\img\5.png" alt="Sector Image 5" class="img-fluid rounded">
+                </div>
+                <div class="col-md-6 order-md-1">
+                  <h3><span class="icon bi-circle-fill" style="color: #FF9F7C;  font-size: 1rem;"></span><span> Energy and Utilities</span></h3>
+                  <p><span class="pint">Energy Efficiency Consulting:</span>  Reducing energy consumption and costs.
+                    <br>
+                  <span class="pint" >Renewable Energy Solutions:</span> Developing and implementing renewable energy projects.
+                  <br>
+                  <span class="pint">Smart Grid Consulting:</span> Developing and implementing smart grid technologies for energy distribution.
+                  <br>
+                  <span class="pint">Energy Efficiency Consulting:</span> Advising on energy-saving strategies and technologies.
+                  <br>
+                  <span class="pint" >Sustainability Strategy:</span> Advising on carbon footprint reduction and sustainability initiatives.
+                  <br>
+                  <span class="pint">Regulatory Compliance Consulting:</span> Ensuring adherence to environmental and energy regulations.
+                  <br>
+                  <span class="pint">Risk & Compliance Management:</span> Navigating regulatory frameworks and mitigating risks in the energy sector.
+      
+                  </p>
+                </div>
+              </div>
+            </div>
+          
+          
+          
+              
+              <div class="col-lg-12 mb-4 sector sector-left">
+                <div class="row align-items-center content-wrapper" style="background-color: #fff;" >
+                  <div class="col-md-6">
+                    <img src="assets\img\6.png" alt="Sector Image 6" class="img-fluid rounded">
+                  </div>
+                  <div class="col-md-6">
+                    <h3><span class="icon bi-circle-fill" style="color: #FF9F7C;  font-size: 1rem;"></span><span> Telecommunications</span></h3>
+                    <p><span class="pint">Digital Transformation:</span> Transitioning traditional telecom services to digital platforms.
+                      <br>
+                    <span class="pint"> Customer Experience Enhancement:</span> Improving customer satisfaction through digital and service improvements.
+                    <br>
+                    <span class="pint"> 5G Strategy Development:</span> Assisting with the rollout and adoption of 5G technologies.
+                    <br>
+                    <span class="pint">Network Optimization:</span> Enhancing the performance and reliability of telecommunications networks.
+                    <br>
+                    <span class="pint"> Cybersecurity Solutions Consulting:</span> Protecting telecom infrastructure from cyber threats.
+                    <br>
+                    <span class="pint"> Regulatory Compliance Consulting:</span> Navigating the complex telecom regulatory environment.
+                    <br>
+                    <span class="pint">Product Innovation Consulting:</span> Developing new telecom services and products.
+      
+                    
+                    </p>
+                  </div>
+                </div>
+              </div>
+            
+              
+              <div class="col-lg-12 mb-4 sector sector-right">
+                <div class="row align-items-center content-wrapper" style="background-color: #fff;" >
+                  <div class="col-md-6 order-md-2">
+                    <img src="assets\img\7.png" alt="Sector Image 7" class="img-fluid rounded">
+                  </div>
+                  <div class="col-md-6 order-md-1">
+                    <h3><span class="icon bi-circle-fill" style="color: #FF9F7C;  font-size: 1rem;"></span><span> Education</span></h3>
+                    <p><span class="pint">Strategic Planning:</span> Developing long-term strategies for educational institutions.
+                      <br>
+                      <span class="pint">Digital Transformation in Education:</span> Implementing e-learning platforms and digital education tools.
+                      <br>
+                     <span class="pint">Curriculum Development Consulting:</span>  Advising on modernizing and enhancing educational curricula.
+                     <br>
+                     <span class="pint">Operational Efficiency:</span>  Streamlining administrative processes within educational institutions.
+                     <br>
+                     <span class="pint">Institutional Excellence Programs:</span>  Helping educational institutions achieve excellence standards.
+                     <br>
+                     <span class="pint">Student Experience Enhancement:</span>  Improving student services and support systems.
+                     <br>
+                     <span class="pint">Sustainability in Education:</span>  Developing sustainable practices and strategies for educational institutions.
+                     <br>
+                     <span class="pint">Institutional Accreditation and Compliance:</span>  Assisting institutions in achieving and maintaining accreditation.
+                     <br>
+                     <span class="pint">Leadership and Faculty Development:</span>  Providing training and development programs for educational leaders and faculty members.
+      
+                      
+                    </p>
+                  </div>
+                </div>
+              </div>
+            
+              
+              <div class="col-lg-12 mb-4 sector sector-left">
+                <div class="row align-items-center content-wrapper" style="background-color: #fff;" >
+                  <div class="col-md-6">
+                    <img src="assets\img\8.png" alt="Sector Image 8" class="img-fluid rounded">
+                  </div>
+                  <div class="col-md-6">
+                    <h3><span class="icon bi-circle-fill" style="color: #FF9F7C;  font-size: 1rem;"></span><span> Automotive</span></h3>
+                    <p><span class="pint">Digital Transformation:</span> Implementing Industry 4.0 technologies in manufacturing.
+                      <br>
+                     <span class="pint">Electric Vehicle (EV) Transition:</span> Supporting the shift to electric vehicles with infrastructure and strategy.
+                     <br>
+                     <span class="pint"> Supply Chain Resilience and Optimization: </span>Strengthening the automotive supply chain against disruptions.
+                     <br>
+                     <span class="pint">Connected Car Solutions:</span>  Implementing IoT and telematics for connected vehicle experiences.
+                     <br>
+                     <span class="pint">Product Innovation Consulting:</span> Advising on the development of new automotive technologies and products.
+                     <br>
+                     <span class="pint"> Customer Experience Enhancement:</span> Improving service and support for automotive customers.
+                     <br>
+                     <span class="pint">Sustainability in Manufacturing Consulting:</span>  Integrating sustainable practices into automotive production.
+      
+                      </p>
+                  </div>
+                </div>
+              </div>
+            
+             
+              <div class="col-lg-12 mb-4 sector sector-right">
+                <div class="row align-items-center content-wrapper" style="background-color: #fff;" >
+                  <div class="col-md-6 order-md-2">
+                    <img src="assets\img\9.png" alt="Sector Image 9" class="img-fluid rounded">
+                  </div>
+                  <div class="col-md-6 order-md-1">
+                    <h3><span class="icon bi-circle-fill" style="color: #FF9F7C;  font-size: 1rem;"></span><span> Retail</span></h3>
+                    <p><span class="pint">Omnichannel Strategy Development:</span>  Integrating online and offline retail channels for seamless customer experiences.
+                      <br>
+                     <span class="pint"> Customer Behavior Analytics:</span> Using data to understand and predict customer preferences.
+                     <br>
+                     <span class="pint">Supply Chain Management and Optimization:</span>  Optimizing inventory and logistics to reduce costs and increase efficiency.
+                     <br>
+                     <span class="pint">Digital Transformation:</span>  Implementing e-commerce platforms and retail technologies.
+                     <br>
+                     <span class="pint"> Retail Technology Implementation:</span> Integrating new technologies such as AI and VR into retail environments.
+                     <br>
+                     <span class="pint">Customer Analytics:</span>  Leveraging data to understand consumer behavior.
+                     <br>
+                     <span class="pint">Brand Strategy Consulting:</span>  Developing and positioning retail brands.
+      
+                    
+                    </p>
+                  </div>
+                </div>
+              </div>
+          
+          
+             
+             <div class="col-lg-12 mb-4 sector sector-left">
+              <div class="row align-items-center content-wrapper" style="background-color: #fff;" >
+                <div class="col-md-6">
+                  <img src="assets\img\10.png" alt="Sector Image 10" class="img-fluid rounded">
+                </div>
+                <div class="col-md-6">
+                  <h3><span class="icon bi-circle-fill" style="color: #FF9F7C;  font-size: 1rem;"></span><span> Technology</span></h3>
+                  <p><span class="pint">Digital Transformation:</span>  Advising on the adoption of emerging technologies.
+                    <br>
+                   <span class="pint">Cloud Strategy Consulting:</span>  Helping companies transition to cloud-based solutions.
+                   <br>
+                   <span class="pint">AI & Machine Learning Integration:</span>  Advising on Implementing AI and ML technologies in business processes.
+                   <br>
+                   <span class="pint">Software Development & Optimization:</span>  Advising on software development projects and improving existing systems.
+                   <br>
+                   <span class="pint">Innovation Consulting:</span>  Guiding the development and commercialization of new technologies.
+                   <br>
+                   <span class="pint">Cybersecurity Consulting:</span>  Implementing strategies to protect against cyber threats.
+                   <br>
+                   <span class="pint">Product Development Consulting:</span>  Supporting the design and launch of new tech products.
+                   <br>
+                   <span class="pint">IT Infrastructure Optimization: </span>  Enhancing the efficiency and reliability of IT systems.
+      
+      
+                    </p>
+                </div>
+              </div>
+            </div>
+          
+           
+            <div class="col-lg-12 mb-4 sector sector-right">
+              <div class="row align-items-center content-wrapper" style="background-color: #fff;" >
+                <div class="col-md-6 order-md-2">
+                  <img src="assets\img\11.png" alt="Sector Image 11" class="img-fluid rounded">
+                </div>
+                <div class="col-md-6 order-md-1">
+                  <h3><span class="icon bi-circle-fill" style="color: #FF9F7C;  font-size: 1rem;"></span><span> Logistics & Transportation</span></h3>
+                  <p><span class="pint">Supply Chain Consulting: </span>  Enhancing logistics and distribution efficiency.
+                    <br>
+                   <span class="pint">Supply Chain Digitization: </span>  Integrating digital tools into supply chain management.
+                   <br>
+                   <span class="pint">Logistics Network Optimization:</span> Streamlining logistics networks for efficiency.
+                   <br>
+                   <span class="pint">Fleet Management Optimization:</span>  Improving the performance and cost-effectiveness of transportation fleets.
+                   <br>
+                   <span class="pint">Sustainability in Transportation Consulting:</span> Advising on reducing environmental impact in transportation.
+                   <br>
+                   <span class="pint">Last-Mile Delivery Optimization:</span>  Enhancing the efficiency of last-mile delivery operations.
+                   <br>
+                   <span class="pint">Regulatory Compliance:</span>  Ensuring adherence to transportation and logistics regulations.
+      
+                    </p>
+                </div>
+              </div>
+            </div>
+          
+            
+            <div class="col-lg-12 mb-4 sector sector-left">
+              <div class="row align-items-center content-wrapper" style="background-color: #fff;" >
+                <div class="col-md-6">
+                  <img src="assets\img\12.png" alt="Sector Image 12" class="img-fluid rounded">
+                </div>
+                <div class="col-md-6">
+                  <h3><span class="icon bi-circle-fill" style="color: #FF9F7C;  font-size: 1rem;"></span><span> Hospitality & Tourism</span> </h3>
+                  <p><span class="pint">Customer Experience Optimization:</span>  Enhancing guest satisfaction and loyalty.
+                    <br>
+                   <span class="pint">Digital Transformation:</span>  Transitioning traditional hospitality services to digital platforms.
+                   <br>
+                   <span class="pint">Sustainability in Hospitality Consulting:</span> Integrating sustainable eco-friendly practices in hospitality operations.
+                   <br>
+                   <span class="pint">Revenue Management Solutions:</span> Developing strategies to optimize revenue across hospitality services.
+                   <br>
+                   <span class="pint">Brand Development & Marketing:</span>  Advising on brand positioning and marketing strategies in tourism.
+                   <br>
+                   <span class="pint">Sustainability Consulting:</span> Implementing eco-friendly practices in hotels and resorts.
+                   <br>
+                   <span class="pint">Brand Strategy Consulting:</span> Developing and positioning hospitality brands.
+      
+       
+                    </p>
+                </div>
+              </div>
+            </div>
+          
+              
+            <div class="col-lg-12 mb-4 sector sector-right">
+              <div class="row align-items-center content-wrapper" style="background-color: #fff;" >
+                <div class="col-md-6 order-md-2">
+                  <img src="assets\img\13.png" alt="Sector Image 13" class="img-fluid rounded">
+                </div>
+                <div class="col-md-6 order-md-1">
+                  <h3><span class="icon bi-circle-fill" style="color: #FF9F7C;  font-size: 1rem;"></span><span> Real Estate & Construction</span></h3>
+                  <p><span class="pint">Smart City Development:</span>  Advising on the development of smart cities and infrastructure.
+                    <br>
+                   <span class="pint">Sustainability Consulting:</span>  Implementing eco-friendly construction and building management practices.
+                   <br>
+                   <span class="pint">Project Management Consulting: </span>  Providing expertise in managing large-scale construction projects.
+                   <br>
+                   <span class="pint">Digital Transformation:</span>  Implementing smart building technologies and digital platforms.
+                   <br>
+                   <span class="pint">Property Development Consulting: </span>  Advising on real estate development projects.
+                   <br>
+                   <span class="pint">Real Estate Investment Advisory:</span>  Offering insights and strategies for real estate investment.
+                   <br>
+                   <span class="pint">Market Analysis & Strategy:</span>  Providing insights and strategies for real estate investments.
+                   <br>
+                   <span class="pint">Asset Management Optimization:</span>  Enhancing the performance of real estate portfolios.
+      
+                    </p>
+                </div>
+              </div>
+            </div>
+          
+          
+             <div class="col-lg-12 mb-4 sector sector-left">
+              <div class="row align-items-center content-wrapper" style="background-color: #fff;" >
+                <div class="col-md-6">
+                  <img src="assets\img\14.png" alt="Sector Image 14" class="img-fluid rounded">
+                </div>
+                <div class="col-md-6">
+                  <h3><span class="icon bi-circle-fill" style="color: #FF9F7C;  font-size: 1rem;"></span><span> Media & Entertainment</span> </h3>
+                  <p><span class="pint">Content Strategy Consulting:</span>  Advising on content creation, distribution, and monetization strategies.
+                    <br>
+                   <span class="pint">Digital Transformation in Media:</span>  Implementing digital tools for content management and audience engagement.
+                   <br>
+                   <span class="pint">Audience Analytics: </span>  Using data to understand and grow audiences.
+                   <br>
+                   <span class="pint">Media Rights Management: </span>  Advising on the acquisition and management of media rights.
+                   <br>
+                   <span class="pint">Content Monetization Solutions: </span>  Developing strategies to monetize media and entertainment content.
+                   <br>
+                   <span class="pint">Marketing and Brand Consulting: </span>  Developing branding, marketing, and promotional strategies.
+                   <br>
+                   <span class="pint">Customer Experience Enhancement: </span>  Enhancing user experiences across platforms and channels.
+                   <br>
+                   <span class="pint">Regulatory Compliance and Risk Management: </span>  Navigating media regulations and managing industry risks.
+      
+      
+                    </p>
+                </div>
+              </div>
+            </div>
+          
+            
+          
+              
+            <div class="col-lg-12 mb-4 sector sector-right">
+              <div class="row align-items-center content-wrapper" style="background-color: #fff;" >
+                <div class="col-md-6 order-md-2">
+                  <img src="assets\img\15.png" alt="Sector Image 13" class="img-fluid rounded">
+                </div>
+                <div class="col-md-6 order-md-1">
+                  <h3><span class="icon bi-circle-fill" style="color: #FF9F7C;  font-size: 1rem;"></span><span> Pharmaceuticals & Life Sciences</span></h3>
+                  <p><span class="pint">R&D Strategy Consulting:</span>  Advising on research and development strategies.
+                    <br>
+                   <span class="pint">Regulatory Compliance: </span>  Ensuring adherence to pharmaceutical regulations and standards. 
+                   <br>
+                   <span class="pint">Supply Chain Management: </span>  Optimizing supply chains for pharmaceuticals and life sciences companies. 
+                   <br>
+                   <span class="pint">Digital Transformation: </span>  Implementing digital solutions in R&D and manufacturing. 
+                   <br>
+                   <span class="pint">Market Access & Commercial Strategy: </span>  Developing strategies for product launch and market access. 
+                    </p>
+                </div>
+              </div>
+            </div>
+          
+          
+             <div class="col-lg-12 mb-4 sector sector-left">
+              <div class="row align-items-center content-wrapper" style="background-color: #fff;" >
+                <div class="col-md-6">
+                  <img src="assets\img\16.png" alt="Sector Image 14" class="img-fluid rounded">
+                </div>
+                <div class="col-md-6">
+                  <h3><span class="icon bi-circle-fill" style="color: #FF9F7C;  font-size: 1rem;"></span><span> Agriculture & Agribusiness</span> </h3>
+                  <p><span class="pint">Precision Farming Solutions:</span>  Implementing IoT and AI for more efficient farming practices.
+                    <br>
+                   <span class="pint">Sustainability in Agriculture:</span>  Advising on sustainable farming practices and resource management.
+                   <br>
+                   <span class="pint">Agribusiness Supply Chain Optimization:</span>  Streamlining supply chains from farm to market.
+                   <br>
+                   <span class="pint">AgriTech Integration:</span>  Implementing technology solutions in agriculture.
+                   <br>
+                   <span class="pint">Market Access & Trade Consulting:</span>  Assisting agribusinesses in accessing new markets and navigating trade regulations.
+      
+                    </p>
+                </div>
+              </div>
+            </div>
+      
+      
+            <div class="col-lg-12 mb-4 sector sector-right">
+              <div class="row align-items-center content-wrapper" style="background-color: #fff;" >
+                <div class="col-md-6 order-md-2">
+                  <img src="assets\img\17.png" alt="Sector Image 13" class="img-fluid rounded">
+                </div>
+                <div class="col-md-6 order-md-1">
+                  <h3><span class="icon bi-circle-fill" style="color: #FF9F7C;  font-size: 1rem;"></span><span> Aerospace & Aviation</span></h3>
+                  <p><span class="pint">Technology Integration Consulting:</span> Implementing advanced technologies in aerospace and aviation industry.
+                    <br>
+                   <span class="pint">Regulatory Compliance:</span>  Ensuring adherence to aviation regulations and standards.
+                   <br>
+                   <span class="pint">Supply Chain Management:</span>  Optimizing the aerospace and aviation supply chain.
+                   <br>
+                   <span class="pint">R&D Strategy Consulting: </span>  Enhancing research and development processes.
+                   <br>
+                   <span class="pint">Operational Efficiency:</span>  Streamlining manufacturing and operations in the aerospace and aviation industry.
+                   <br>
+                   <span class="pint">Customer Experience Enhancement:</span>  Enhancing passengers' satisfaction through tailored care strategies.
+                   <br>
+                   <span class="pint">Brand Management and Marketing:</span>  Developing strategies for brand positioning, marketing campaigns, and customer engagement.
+      
+      
+                    </p>
+                </div>
+              </div>
+            </div>
+         
+          
+          
+          </div>
+          </div>
+          </div>
+          </section>
+
+          <section class="container-fluid bg-image">
+            <div class=" overlay"></div>
+             <div class="row py-4">
+              <div class="col-6">
+
+
+              </div>
+              <div class="col-6 last-colmm justify-content-center" >
+                <h2 class="last-cont" >Tailored Solutions for <span style="color: #638181;">Various</span> Industries <span class="bi bi-circle-fill" style="font-size: 1rem;color: #fff;"></span>
+                </h2>
+              </div>
+                
+              </div>
+            </div>
+          </section>
+
+
+    </main>
+    <!-- Main Content End -->
+
+    <!-- Footer Start -->
+     <!-- Footer Start -->
+     <footer class="text-center text-lg-start">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <img src="assets/img/logo.png" alt="Levenbert Logo" height="50">
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="./overview">Overview</a></li>
+                        <li><a href="./businesses">Businesses</a></li>
+                        <li><a href="./industries">Industries</a></li>
+                        <li><a href="./portfolio">Portfolio</a></li>
+                        <li><a href="./insight">Insights</a></li>
+                        <li><a href="./terms-of-use" >Terms</a></li>
+                        <li><a href="./Privacy-Policy">Privacy</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5>Businesses</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="./business-transformation">Business Transformation</a></li>
+                        <li><a href="./business-empowerment">Business Empowerment</a></li>
+                        <li><a href="./business-excellence">Business Excellence</a></li>
+                        <li><a href="./business-agility">Business Agility</a></li>
+                        <li><a href="./business-intelligence">Business Intelligence</a></li>
+                        <li><a href="./business-immunity">Business Immunity</a></li>
+                        <li><a href="./business-sustainability">Business Sustainability</a></li>
+                        <li><a href="./business-efficiency">Business Efficiency</a></li>
+                    </ul>
+                </div>
+             <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5>Contact Info</h5>
+                    <a href="mailto:info@levenbert.com">info@levenbert.com</a><br>
+                    <br>
+                    <a href="https://www.linkedin.com/company/levenbert/" class="bi bi-linkedin" style="font-size: 24px;"></a> | <a href="https://www.instagram.com/levenbert_consulting/" class="bi bi-instagram" style="font-size: 24px;"></a> | <a href="https://twitter.com/levenbert?lang=ar" class="bi bi-twitter" style="font-size: 24px;"></a> | <a href="https://www.facebook.com/Levenbert/" class="bi bi-facebook" style="font-size: 24px;"></a>
+                </div>
+            </div>
+            <div class="text-center p-3">
+                &copy; 2024 LEVENBERT . All rights reserved.
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+      <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

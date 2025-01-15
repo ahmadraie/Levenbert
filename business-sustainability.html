@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Sustainability | LEVENBERT</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!-- AOS CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="assets/css/styles.css" rel="stylesheet">
+    <style>
+      .accordion-button.collapsed::after {
+
+background-image: url(assets/img/add-round-white-icon.svg);
+background-repeat: no-repeat;
+/* color: ; */
+
+}
+
+.accordion-button:not(.collapsed)::after {
+
+background-image: url(assets/img/add-round-grey-icon.svg);
+background-repeat: no-repeat;
+
+
+}
+        .accordion-header{
+
+margin-top: 20px;
+
+}
+
+.accordion-body span{
+
+color: #638181;
+}
+/* Title Section */
+.page-title-section {
+    position: relative;
+    height: 40vh;
+    background: url('assets/img/pagetitle/Bsus.jpg') center/cover no-repeat;
+}
+
+.page-title-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay for readability */
+    color: #fff;
+    text-align: center;
+}
+
+.page-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .page-title {
+        font-size: 2rem;
+    }
+}
+.overlay-dots {
+      position: relative;
+      background-color: white;
+    }
+
+    .overlay-dots::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: radial-gradient(circle , rgba(0, 0, 0, 0.1) 1px, transparent 3px);
+      background-size: 35px 50px;
+      pointer-events: none; /* Ensures the dots don't affect interactivity */
+    }
+
+    .content-wrapper {
+      position: relative;
+      z-index: 1; /* Ensures the content stays above the overlay */
+      padding: 40px 20px;
+    }
+
+</style>
+</head>
+<body>
+  <header class="header fixed-top">
+<div class="topbar d-flex align-items-center ">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+      <div class="contact-info d-flex align-items-center">
+        <!-- <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">Info@vious.com</a></i>
+        <i class="bi bi-phone d-flex align-items-center ms-4"><span>+966 509 711 777</span></i> -->
+      </div>
+      <div class="social-links d-none d-md-flex align-items-center">
+        <a href="https://twitter.com/levenbert?lang=ar" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="https://www.facebook.com/Levenbert/" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/levenbert_consulting/" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/company/levenbert/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+  </div>
+  
+  <!-- End Top Bar -->
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg  ">
+ 
+
+        <div class="container">
+            <a class="navbar-brand" href="./index">
+                <img src="assets/img/logo.png" alt="Levenbert Logo" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                   <li class="nav-item"><a class="nav-link" href="./index">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./overview">Overview</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./businesses">Businesses</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./industries">Industries</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./investors">Investors</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./insight">Insights</a></li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <img src="assets/img/Languages.png" alt="Language Icon" style="width: 24px; height: 24px;">
+                      </a>
+                      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="languageDropdown">
+                          <a class="dropdown-item" href="#">English</a>
+                          <a class="dropdown-item" href="#">Arabic</a>
+                      </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+</header>
+
+    <!-- Main Content Start -->
+    <main class="overlay-dots">
+        <section class="page-title-section">
+            <div class="page-title-overlay d-flex align-items-center justify-content-center">
+                <h1 class="page-title">Business Sustainability</h1>
+            </div>
+        </section>
+
+
+        <!-- Service Details Section -->
+   <section id="service-details" class="content-wrapper service-details section">
+
+    <div class="container">
+
+      <div class="row gy-4">
+
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100" style="background-color: #fff;">
+          <div class="services-list" id="listt">
+            <a href="./business-transformation">Business Transformation </a>
+            <a href="./business-empowerment">Business Empowerment </a>
+            <a href="./business-excellence">Business Excellence</a>
+            <a href="./business-agility">Business Agility</a>
+            <a href="./business-intelligence">Business Intelligence</a>
+            <a href="./business-immunity">Business Immunity</a>
+            <a href="./business-sustainability" class="active">Business Sustainability</a>
+            <a href="./business-efficiency">Business Efficency</a>
+           
+
+          </div>
+
+        </div>
+
+
+        <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200" style="background-color: #fff;">
+          <img src="assets/img/ex7.png" alt="" class="img-fluid services-img">
+          <h3 style="color: #2D435B;"><span class="icon bi-circle-fill" style="color: #FF9F7C;font-size: 1rem                                 ;"></span> Business Sustainability Solutions</h3>
+          <p style="font-size: 16px;padding-left: 20px;">
+            LEVENBERT's business sustainability solutions are designed to help organizations integrate sustainability into their core operations, ensuring long-term viability and a positive impact on the environment, society, and the economy. Our comprehensive solutions encompass various strategies and practices that address the challenges of sustainable development. Below are the key components of our sustainability solutions:
+          </p>
+
+          <div  class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                <button style="height: 100px; background-color: #638181; color:#ffffff; font-weight: bold;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                  Sustainable Strategy Development
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse " aria-labelledby="panelsStayOpen-headingOne">
+                <div class="accordion-body">
+                  <!-- <p>Our innovation strategies are tailored to help organizations stay ahead in a competitive market by fostering a culture of innovation and continuous improvement. 
+
+                  </p>  -->
+                    <h3><span>
+                      Vision and Mission Alignment: </span></h3>
+                    <ul>
+                      <li><i class="bi bi-circle-fill" style="color: #FF9F7C;font-size: 1rem;"></i>Aligning the company's vision and mission with sustainability principles to ensure that all business activities contribute to long-term sustainability goals.
+
+
+                      </li>
+                    </ul>
+                    <h3><span>Sustainability Roadmap: </span></h3>
+                    <ul>
+                      <li><i class="bi bi-circle-fill" style="color: #FF9F7C;font-size: 1rem;"></i>Creating a detailed roadmap that outlines short-term and long-term sustainability objectives, key performance indicators (KPIs), and milestones.
+
+
+                      </li>
+                     
+                    </ul>
+                  
+                  </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                <button style="height: 100px; background-color: #FF9F7C; color:#ffffff; font-weight: bold;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true" aria-controls="panelsStayOpen-collapseTwo">
+                  Environmental Impact Management
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse " aria-labelledby="panelsStayOpen-headingTwo">
+                <div class="accordion-body">
+                  <!-- <p>Our R&D services focus on driving technological advancements and developing new products and services that meet market needs.
+                  </p>  -->
+                    <h3><span>
+                      Resource Efficiency: </span></h3>
+                    <ul>
+                      <li><i class="bi bi-circle-fill" style="color: #FF9F7C;font-size: 1rem;"></i>Implementing practices to optimize the use of natural resources, reduce waste, and improve energy efficiency across operations.
+
+
+                      </li>
+                    </ul>
+                    <h3><span>Carbon Footprint Reduction: </span></h3>
+                    <ul>
+                      <li><i class="bi bi-circle-fill" style="color: #FF9F7C;font-size: 1rem;"></i>Developing strategies to minimize greenhouse gas emissions through renewable energy adoption, energy-efficient technologies, and sustainable transportation solutions.
+
+
+                      </li>
+                     
+                    </ul>
+                    <h3><span>Waste Management: </span></h3>
+                    <ul>
+                      <li><i class="bi bi-circle-fill" style="color: #FF9F7C;font-size: 1rem;"></i>Establishing comprehensive waste management systems to reduce, reuse, and recycle waste materials, thus minimizing the environmental footprint.
+
+
+                      </li>
+                      
+                    </ul>
+                  </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                <button style="height: 100px; background-color: #638181; color:#ffffff; font-weight: bold;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="true" aria-controls="panelsStayOpen-collapseThree">
+                  Social Responsibility Initiatives
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse " aria-labelledby="panelsStayOpen-headingThree">
+                <div class="accordion-body">
+                  <!-- <p>LEVENBERT's think tanks bring together experts and thought leaders to explore complex challenges and generate actionable insights.
+
+                  </p>  -->
+                    <h3><span>
+                      Community Engagement: </span></h3>
+                    <ul>
+                      <li><i class="bi bi-circle-fill" style="color: #FF9F7C;font-size: 1rem;"></i>Creating programs that engage and support local communities, including education, health, and economic development initiatives.
+
+
+                      </li>
+                    </ul>
+                    <h3><span>Employee Well-being: </span></h3>
+                    <ul>
+                      <li><i class="bi bi-circle-fill" style="color: #FF9F7C;font-size: 1rem;"></i>Promoting a healthy and inclusive workplace by implementing policies that support employee health, safety, diversity, and work-life balance.
+
+
+
+                      </li>
+                     
+                    </ul>
+                    <h3><span>Ethical Supply Chain:  </span></h3>
+                    <ul>
+                      <li><i class="bi bi-circle-fill" style="color: #FF9F7C;font-size: 1rem;"></i>Ensuring that all suppliers and partners adhere to ethical and sustainable practices, including fair labor conditions and responsible sourcing.
+
+
+
+                      </li>
+                    </ul>
+
+                  
+                  </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                <button style="height: 100px; background-color: #FF9F7C; color:#ffffff; font-weight: bold;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="true" aria-controls="panelsStayOpen-collapseFour">
+                  Economic Viability
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse " aria-labelledby="panelsStayOpen-headingFour">
+                <div class="accordion-body">
+                  <!-- <p>Our innovation labs provide a collaborative environment where ideas can be transformed into tangible solutions.
+
+                  </p>  -->
+                    <h3><span>
+                      Sustainable Business Models:  </span></h3>
+                    <ul>
+                      <li><i class="bi bi-circle-fill" style="color: #FF9F7C;font-size: 1rem;"></i>Developing and promoting business models that generate economic value while considering social and environmental impacts.
+
+
+                      </li>
+                    </ul>
+                    <h3><span>Innovation and R&D: </span></h3>
+                    <ul>
+                      <li><i class="bi bi-circle-fill" style="color: #FF9F7C;font-size: 1rem;"></i>Investing in research and development to create innovative solutions that address sustainability challenges and create new market opportunities.
+
+
+                      </li>
+                     
+                    </ul>
+                    <h3><span>Risk Management: </span></h3>
+                    <ul>
+                      <li><i class="bi bi-circle-fill" style="color: #FF9F7C;font-size: 1rem;"></i> Identifying and mitigating sustainability-related risks to ensure long-term business resilience and profitability.
+
+
+                      </li>
+                      
+
+                    </ul>
+                  </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+                <button style="height: 100px; background-color: #638181; color:#ffffff; font-weight: bold;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="true" aria-controls="panelsStayOpen-collapseFive">
+                  Regulatory Compliance and Reporting
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse " aria-labelledby="panelsStayOpen-headingFive">
+                <div class="accordion-body">
+                  <!-- <p>Leveraging advanced data analytics to derive actionable insights that drive business decisions and innovation.
+                  </p>  -->
+                    <h3><span>
+                      Regulatory Adherence: </span></h3>
+                    <ul>
+                      <li><i class="bi bi-circle-fill" style="color: #FF9F7C;font-size: 1rem;"></i>Ensuring compliance with all relevant environmental, social, and governance (ESG) regulations and standards.
+
+
+                      </li>
+                    </ul>
+                    <h3><span>Sustainability Reporting:  </span></h3>
+                    <ul>
+                      <li><i class="bi bi-circle-fill" style="color: #FF9F7C;font-size: 1rem;"></i>Developing transparent reporting mechanisms to communicate sustainability performance to stakeholders, including annual sustainability reports and ESG disclosures.
+
+
+                      </li>
+                     
+                    </ul>
+                    
+
+                  </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingSix">
+                <button style="height: 100px; background-color: #FF9F7C; color:#ffffff; font-weight: bold;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="true" aria-controls="panelsStayOpen-collapseSix">
+                  Stakeholder Engagement
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse " aria-labelledby="panelsStayOpen-headingSix">
+                <div class="accordion-body">
+                  <!-- <p>Supporting organizations in their digital transformation journey to enhance innovation capabilities.
+                  </p>  -->
+                    <h3><span>
+                      Collaborative Partnerships: </span></h3>
+                    <ul>
+                      <li><i class="bi bi-circle-fill" style="color: #FF9F7C;font-size: 1rem;"></i>Building partnerships with governments, NGOs, industry groups, and other stakeholders to advance sustainability initiatives and share best practices.
+
+
+
+                      </li>
+                    </ul>
+                    <h3><span>Stakeholder Communication: </span></h3>
+                    <ul>
+                      <li><i class="bi bi-circle-fill" style="color: #FF9F7C;font-size: 1rem;"></i>Engaging with stakeholders through regular updates, consultations, and feedback mechanisms to ensure alignment and support for sustainability goals.
+
+
+                      </li>
+                     
+                    </ul>
+                    
+                   
+                  </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingSeven">
+                <button style="height: 100px; background-color: #638181; color:#ffffff; font-weight: bold;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSeven" aria-expanded="true" aria-controls="panelsStayOpen-collapseSeven">
+                  Continuous Improvement
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse " aria-labelledby="panelsStayOpen-headingSeven">
+                <div class="accordion-body">
+                  <!-- <p>Supporting organizations in their digital transformation journey to enhance innovation capabilities.
+                  </p>  -->
+                    <h3><span>
+                      Monitoring and Evaluation: </span></h3>
+                    <ul>
+                      <li><i class="bi bi-circle-fill" style="color: #FF9F7C;font-size: 1rem;"></i>Establishing systems to continuously monitor, evaluate, and improve sustainability performance based on data-driven insights and feedback.
+
+
+                      </li>
+                    </ul>
+                    <h3><span>Capacity Building: </span></h3>
+                    <ul>
+                      <li><i class="bi bi-circle-fill" style="color: #FF9F7C;font-size: 1rem;"></i>Providing training and development programs to build organizational capacity and expertise in sustainability practices.
+
+
+
+                      </li>
+                     
+                    </ul>
+                   
+                   
+                  </div>
+              </div>
+            </div>
+          </div>
+          <h3 style="font-size: 24px;color: #638181;margin-top: 20px;">Benefits of LEVENBERT’s Sustainability Solutions
+          </h3>
+<P style="padding-left: 20px;">
+  <span style="color: #638181;font-weight: bold;">Enhanced Reputation:</span> Building a positive corporate image and gaining trust from stakeholders by demonstrating commitment to sustainability.
+  <br><span  style="color: #638181;font-weight: bold">Operational Efficiency:</span>  Achieving cost savings and operational efficiency through resource optimization and waste reduction.
+  <br> <span  style="color: #638181;font-weight: bold">Regulatory Compliance:</span>  Ensuring compliance with environmental laws and regulations, thereby avoiding legal risks and penalties.
+  <br><span  style="color: #638181;font-weight: bold">Market Competitiveness:</span>  Gaining a competitive edge by adopting sustainable practices that attract eco-conscious consumers and investors.
+  <br><span style="color: #638181;font-weight: bold">Long-term Viability:</span>  Ensuring long-term business viability by proactively addressing environmental and social challenges.
+  
+</P>
+            <p style="font-size: 16px;">
+              LEVENBERT's Business Sustainability Solutions are tailored to meet the unique needs of each organization, helping them to achieve their sustainability goals and create lasting value for all stakeholders. By integrating sustainability into the core business strategy, companies can enhance their reputation, drive innovation, and ensure long-term success in a rapidly changing world.
+            </p>
+          </div>
+        <!-- <div class="col-lg-2 ads" data-aos="fade-up" data-aos-delay="100" style="background-color: #fff; ">
+          <div class="ads-list">
+          <div class=" col-12 ads-item ">
+            <img class="card-img-top" src="assets/img/news01.jpg" alt="">
+            <h3>
+            CATALYST 
+            </h3>
+            <p>
+              Driving bold ideas, innovation, collaboration, and transformative growth.
+            </p>
+            <a class="btn" href="#">Learn more</a>
+          </div>
+          <div class=" col-12 ads-item" style="background-image: url('assets/img/news01.jpg');">
+            <h3>
+              ads for products 
+            </h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid aliquam unde labore provident doloribus dignissimos dicta atque tempore sit assumenda minus rem illum nesciunt mollitia beatae, culpa sequi fugiat magnam?
+            </p>
+            <a class="btn" href="#">Learn more</a>
+          </div>
+
+          
+          </div>
+
+
+        </div> -->
+
+        </div>
+      </div>
+      
+
+    </section><!-- /Service Details Section -->
+    </main>
+    <!-- Main Content End -->
+
+    <!-- Footer Start -->
+     <!-- Footer Start -->
+    <footer class="text-center text-lg-start">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <img src="assets/img/logo.png" alt="Levenbert Logo" height="50">
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="./overview">Overview</a></li>
+                        <li><a href="./businesses">Businesses</a></li>
+                        <li><a href="./industries">Industries</a></li>
+                        <li><a href="./portfolio">Portfolio</a></li>
+                        <li><a href="./insight">Insights</a></li>
+                        <li><a href="./terms-of-use" >Terms</a></li>
+                        <li><a href="./Privacy-Policy">Privacy</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5>Businesses</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="./business-transformation">Business Transformation</a></li>
+                        <li><a href="./business-empowerment">Business Empowerment</a></li>
+                        <li><a href="./business-excellence">Business Excellence</a></li>
+                        <li><a href="./business-agility">Business Agility</a></li>
+                        <li><a href="./business-intelligence">Business Intelligence</a></li>
+                        <li><a href="./business-immunity">Business Immunity</a></li>
+                        <li><a href="./business-sustainability">Business Sustainability</a></li>
+                        <li><a href="./business-efficiency">Business Efficiency</a></li>
+                    </ul>
+                </div>
+             <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5>Contact Info</h5>
+                    <a href="mailto:info@levenbert.com">info@levenbert.com</a><br>
+                    <br>
+                    <a href="https://www.linkedin.com/company/levenbert/" class="bi bi-linkedin" style="font-size: 24px;"></a> | <a href="https://www.instagram.com/levenbert_consulting/" class="bi bi-instagram" style="font-size: 24px;"></a> | <a href="https://twitter.com/levenbert?lang=ar" class="bi bi-twitter" style="font-size: 24px;"></a> | <a href="https://www.facebook.com/Levenbert/" class="bi bi-facebook" style="font-size: 24px;"></a>
+                </div>
+            </div>
+            <div class="text-center p-3">
+                &copy; 2024 LEVENBERT . All rights reserved.
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+      <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
